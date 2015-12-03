@@ -1,6 +1,6 @@
 {
   "name": "npmbuild1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a demo showing the use of npm as a build tool.",
   "main": "index.js",
   "scripts": {
