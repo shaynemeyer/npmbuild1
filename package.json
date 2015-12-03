@@ -1,5 +1,5 @@
 {
-  "name": "nodebuild1",
+  "name": "npmbuild1",
   "version": "1.0.0",
   "description": "a demo showing the use of npm as a build tool.",
   "main": "index.js",
@@ -24,7 +24,10 @@
     "watch:server": "nodemon --ignore client --ignore public index.js",
     "watch:coffee": "coffee --compile -w --output ./lib ./src/coffeescripts",
     "watch:ts": "tsc -w -outDir ./lib --module commonjs ./src/typescripts/tsCode.ts",
-    "watch:bundle": "watchify ./client/js/app.js -o ./public/js/bundle.js -dv"
+    "watch:bundle": "watchify ./client/js/app.js -o ./public/js/bundle.js -dv",
+    "version:major": "npm version major",
+    "version:minor": "npm version minor",
+    "version:patch": "npm version patch"
   },
   "jshintConfig": {
     "esnext": "true",
@@ -44,10 +47,15 @@
     "supertest": "^1.1.0",
     "typescript": "^1.7.3",
     "uglifyjs": "^2.4.10",
+    "version": "^0.1.2",
     "watch": "^0.16.0",
     "watchify": "^3.6.1"
   },
   "dependencies": {
     "koa": "^1.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
   }
 }
