@@ -1,2 +1,2 @@
 # NPM Build Example
-This demonstrates using npm to build and deploy and app.
+This demonstrates using npm to build an deploy and app.
